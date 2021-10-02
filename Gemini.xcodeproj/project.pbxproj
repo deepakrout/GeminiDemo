@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		16BC7A232707DF8A000662C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BC7A222707DF8A000662C3 /* AppDelegate.swift */; };
 		16BC7A252707DF8A000662C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BC7A242707DF8A000662C3 /* SceneDelegate.swift */; };
-		16BC7A272707DF8A000662C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BC7A262707DF8A000662C3 /* ViewController.swift */; };
 		16BC7A2A2707DF8A000662C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16BC7A282707DF8A000662C3 /* Main.storyboard */; };
 		16BC7A2C2707DF8C000662C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16BC7A2B2707DF8C000662C3 /* Assets.xcassets */; };
 		16BC7A2F2707DF8C000662C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16BC7A2D2707DF8C000662C3 /* LaunchScreen.storyboard */; };
+		16BC7A372707EF6E000662C3 /* CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BC7A362707EF6E000662C3 /* CustomCollectionViewController.swift */; };
+		16BC7A392707F71E000662C3 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BC7A382707F71E000662C3 /* CustomCollectionViewCell.swift */; };
+		B31AE5F78935E4C2DA1F1139 /* Pods_Gemini.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3D24BFB3FB59EEDAB6474F /* Pods_Gemini.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		16BC7A1F2707DF8A000662C3 /* Gemini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gemini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16BC7A222707DF8A000662C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16BC7A242707DF8A000662C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		16BC7A262707DF8A000662C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		16BC7A292707DF8A000662C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16BC7A2B2707DF8C000662C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16BC7A2E2707DF8C000662C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16BC7A302707DF8C000662C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16BC7A362707EF6E000662C3 /* CustomCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewController.swift; sourceTree = "<group>"; };
+		16BC7A382707F71E000662C3 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A3D24BFB3FB59EEDAB6474F /* Pods_Gemini.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gemini.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F8A5E0836C3869889DDF498 /* Pods-Gemini.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gemini.debug.xcconfig"; path = "Target Support Files/Pods-Gemini/Pods-Gemini.debug.xcconfig"; sourceTree = "<group>"; };
+		99F128E6C6DC88188FF2F383 /* Pods-Gemini.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gemini.release.xcconfig"; path = "Target Support Files/Pods-Gemini/Pods-Gemini.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B31AE5F78935E4C2DA1F1139 /* Pods_Gemini.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00DDEFF52935C6F63C353ACA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A3D24BFB3FB59EEDAB6474F /* Pods_Gemini.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		16BC7A162707DF8A000662C3 = {
 			isa = PBXGroup;
 			children = (
 				16BC7A212707DF8A000662C3 /* Gemini */,
 				16BC7A202707DF8A000662C3 /* Products */,
+				9443BB5AD1FB63455E67B28D /* Pods */,
+				00DDEFF52935C6F63C353ACA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +75,23 @@
 			children = (
 				16BC7A222707DF8A000662C3 /* AppDelegate.swift */,
 				16BC7A242707DF8A000662C3 /* SceneDelegate.swift */,
-				16BC7A262707DF8A000662C3 /* ViewController.swift */,
 				16BC7A282707DF8A000662C3 /* Main.storyboard */,
 				16BC7A2B2707DF8C000662C3 /* Assets.xcassets */,
 				16BC7A2D2707DF8C000662C3 /* LaunchScreen.storyboard */,
 				16BC7A302707DF8C000662C3 /* Info.plist */,
+				16BC7A362707EF6E000662C3 /* CustomCollectionViewController.swift */,
+				16BC7A382707F71E000662C3 /* CustomCollectionViewCell.swift */,
 			);
 			path = Gemini;
+			sourceTree = "<group>";
+		};
+		9443BB5AD1FB63455E67B28D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F8A5E0836C3869889DDF498 /* Pods-Gemini.debug.xcconfig */,
+				99F128E6C6DC88188FF2F383 /* Pods-Gemini.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16BC7A332707DF8C000662C3 /* Build configuration list for PBXNativeTarget "Gemini" */;
 			buildPhases = (
+				63F180D03EC0352DE897B51D /* [CP] Check Pods Manifest.lock */,
 				16BC7A1B2707DF8A000662C3 /* Sources */,
 				16BC7A1C2707DF8A000662C3 /* Frameworks */,
 				16BC7A1D2707DF8A000662C3 /* Resources */,
+				F46FDE49BB0D2AB67F0FF0C3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +162,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		63F180D03EC0352DE897B51D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gemini-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F46FDE49BB0D2AB67F0FF0C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gemini/Pods-Gemini-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gemini/Pods-Gemini-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gemini/Pods-Gemini-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		16BC7A1B2707DF8A000662C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16BC7A272707DF8A000662C3 /* ViewController.swift in Sources */,
 				16BC7A232707DF8A000662C3 /* AppDelegate.swift in Sources */,
 				16BC7A252707DF8A000662C3 /* SceneDelegate.swift in Sources */,
+				16BC7A372707EF6E000662C3 /* CustomCollectionViewController.swift in Sources */,
+				16BC7A392707F71E000662C3 /* CustomCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +356,7 @@
 		};
 		16BC7A342707DF8C000662C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F8A5E0836C3869889DDF498 /* Pods-Gemini.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +385,7 @@
 		};
 		16BC7A352707DF8C000662C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99F128E6C6DC88188FF2F383 /* Pods-Gemini.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
